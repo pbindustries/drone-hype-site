@@ -9,9 +9,9 @@ class Header extends React.Component {
             <header id="header">
                 <div className="inner">
                     {/*<a href="#" className="image avatar"><img src={avatar} alt="" /></a>*/}
-                    <h1><strong>United States Drone Analytics</strong><br />
-                    Analytics built using Elasticsearch and Kibana<br />
-                     with live data from <a href="http://html5up.net">Drone Strike API</a>.</h1>
+                    <h1><strong>US Drone Analytics</strong><br />
+                    Built with the Elastic Stack<br />
+                     and live drone <a href="http://html5up.net">data</a>.</h1>
                 </div>
                 <Footer />
             </header>
