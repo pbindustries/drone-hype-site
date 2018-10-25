@@ -75,8 +75,8 @@ class HomeIndex extends React.Component {
     }
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
-        const siteDescription = "Site description"
+        const siteTitle = "US Drone Strike Analytics"
+        const siteDescription = "Drone Strike"
 
         return (
             <Layout>
@@ -89,16 +89,29 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
+                            <h2>What is this?</h2>
+                        </header>
+                        <p> US drone strike analytics based on leaked strike statistics.<br/>
+                            This will allow the public to hold our government accountable for their actions across the globe by allowing easily accessible drone violence analytics/visualizations.</p>
+
+                        <ul className="actions">
+                            <li><a href="hhttp://api.dronestre.am/data" className="button">Drone Data Source</a></li>
+                        </ul>
+                    </section>
+
+                    <section id="two">
+                        <header className="major">
                             <h2>Why is this needed?</h2>
                         </header>
                         <p>Since the introduction of military UAV, or drones, the US has used them for good and bad. <br/>
                         The purpose of this project is raise awareness of exactly how and where our government is utilizing Drones.</p>
+
                         <ul className="actions">
                             <li><a href="https://en.wikipedia.org/wiki/UAVs_in_the_U.S._military" className="button">More About Military Drones</a></li>
                         </ul>
                     </section>
 
-                    <section id="two">
+                    <section id="three">
                         <header className="major">
                             <h2>US Drone Statistics</h2>
                         </header>
@@ -108,12 +121,37 @@ class HomeIndex extends React.Component {
                             <li>TOTAL NUMBER OF CIVILIAN CASUALTIES: 751-1,597</li>
                             <li>TOTAL NUMBER CHILD CASUALTIES: 252-359</li>
                         </ul>
+                        <ul>
+                            <h3>Notable Strikes:</h3>
+                            <li>
+                                <p>Pakistan - 2005-12-01<br/>
+                                    * 5 people were killed, including 2 children, when drones fired on a house 'for about 8 minutes.'<br/>
+                                    * Syrian Abu Hamza Rabia, the senior al Qaeda operative targeted in B3, was killed with two other foreign militants and two boys, aged eight and 17.<br/>
+                                    * http://www.thebureauinvestigates.com/2011/08/10/the-bush-years-2004-2009/"<br/>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Pakistan - 2006-01-06<br/>
+                                    * 8 people were reported killed including 2 women and 1 child.'<br/>
+                                    * An attack on an unnamed alleged al Qaeda official left eight killed, including two women and at least one child.<br/>
+                                    * http://www.thebureauinvestigates.com/2011/08/10/the-bush-years-2004-2009/<br/>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Pakistan - 2006-01-13<br/>
+                                    * 18 civilians, including 6 children, were killed when a US Predator fired on 3 houses.<br/>
+                                    * A strike targeted a possible militant commanders' meeting. But main target Ayman al Zawahiri was absent. Up to 22 people died, most or all civilians, including at least five children.<br/>
+                                    * http://www.thebureauinvestigates.com/2011/08/10/the-bush-years-2004-2009/<br/>
+                                </p>
+                            </li>
+                        </ul>
+
                         <ul className="actions">
                             <li>* Statistics provided by <a href="https://www.thebureauinvestigates.com/projects/drone-war">The Bureau of Investigative Journalism</a></li>
                         </ul>
                     </section>
 
-                    {/*<section id="three">*/}
+                    {/*<section id="four">*/}
                         {/*<h2>Other projects</h2>*/}
 
                         {/*<Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({*/}
@@ -124,7 +162,7 @@ class HomeIndex extends React.Component {
                         {/*}))} />*/}
                     {/*</section>*/}
 
-                    <section id="four">
+                    <section id="five">
                         <h2>Contact Us</h2>
                         <p>Hi there 👋🏽, you probably came here expecting some interesting visualizations and stuff. Our previous analytics implementation was not properly mapping the data 😅. We are working on a new implementation as well as some awesome visualizations 🚧🛠. To be notified of our releases, join our newsletter. We promise not to spam 😇.</p>
                         <div className="row">

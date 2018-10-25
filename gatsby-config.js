@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "United States Drone Strike Analytics",
     author: "Philip Bankier",
-    description: "A Gatsby.js Starter based on Strata by HTML5 UP"
+    description: "Hype site for United States Drone Strike Analytics"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
