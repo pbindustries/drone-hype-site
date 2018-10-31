@@ -167,16 +167,26 @@ class HomeIndex extends React.Component {
                         <p>Hi there 👋🏽, you probably came here expecting some interesting visualizations and stuff. Our previous analytics implementation was not properly mapping the data 😅. We are working on a new implementation as well as some awesome visualizations 🚧🛠. To be notified of our releases, join our newsletter. We promise not to spam 😇.</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form method="post" action="#">
+                                <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                                    <input type="hidden" name="bot-field" />
                                     <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                                        <div className="6u 12u$(xsmall)">
+                                            <input type="text" name="name" id="name" placeholder="Name" />
+                                        </div>
+                                        <div className="6u 12u$(xsmall)">
+                                            <input type="email" name="email" id="email" placeholder="Email" />
+                                        </div>
+                                        <div className="12u">
+                                            <label htmlFor="message">Message</label>
+                                            <textarea name="message" id="message" rows="6"></textarea>
+                                        </div>
                                     </div>
+                                    <br/>
+                                    <ul className="actions">
+                                        <li><input type="submit" value="Send Message" className="special" /></li>
+                                        <li><input type="reset" value="Clear" /></li>
+                                    </ul>
                                 </form>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
                             </div>
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">
