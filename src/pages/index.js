@@ -91,20 +91,23 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>What is this?</h2>
                         </header>
-                        <p> US drone strike analytics based on leaked strike statistics.<br/>
+                        <p> US drone strike analytics and visualizations based on US military strike statistics. This project is being built using the Elastic Stack, Express.JS, Docker, Nginx
+                            and multiple drone data sources.
+                            <br/>
+                            <br/>
                             This will allow the public to hold our government accountable for their actions across the globe by allowing easily accessible drone violence analytics/visualizations.</p>
 
-                        <ul className="actions">
-                            <li><a href="hhttp://api.dronestre.am/data" className="button">Drone Data Source</a></li>
-                        </ul>
+                        {/*<ul className="actions">*/}
+                            {/*<li><a href="hhttp://api.dronestre.am/data" className="button">Drone Data Source</a></li>*/}
+                        {/*</ul>*/}
                     </section>
 
                     <section id="two">
                         <header className="major">
                             <h2>Why is this needed?</h2>
                         </header>
-                        <p>Since the introduction of military UAV, or drones, the US has used them for good and bad. <br/>
-                        The purpose of this project is raise awareness of exactly how and where our government is utilizing Drones.</p>
+                        <p>Since the introduction of the military UAV, or drone, the US has used them for good and for bad. <br/>
+                        The purpose of this project is raise awareness of exactly how and where our government is utilizing Drones. In the hopes of increasing public interest and transparency around the use of drones by the US military</p>
 
                         <ul className="actions">
                             <li><a href="https://en.wikipedia.org/wiki/UAVs_in_the_U.S._military" className="button">More About Military Drones</a></li>
@@ -177,8 +180,7 @@ class HomeIndex extends React.Component {
                                             <input type="email" name="email" id="email" placeholder="Email" />
                                         </div>
                                         <div className="12u">
-                                            <label htmlFor="message">Message</label>
-                                            <textarea name="message" id="message" rows="6"></textarea>
+                                            <textarea name="message" id="message" rows="6" placeholder={"Message"}></textarea>
                                         </div>
                                     </div>
                                     <br/>
@@ -192,7 +194,6 @@ class HomeIndex extends React.Component {
                                 <ul className="labeled-icons">
                                     <li>
                                         <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        Potomac, MD 20854<br />
                                         United States
                                     </li>
                                     <li>
