@@ -5,6 +5,7 @@ module.exports = {
     description: "Hype site for United States Drone Strike Analytics"
   },
   plugins: [
+    `gatsby-plugin-favicon`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
